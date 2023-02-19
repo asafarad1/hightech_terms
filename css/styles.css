@@ -1,0 +1,198 @@
+/* --- fonts --- */
+
+@font-face {
+  font-family: NarkissTam;
+  src: url(../fonts/NarkissTam-Bold.otf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: NarkissYairMono;
+  src: url(../fonts/NarkissYairMono-Bold-TRIAL.otf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: NarkissYairMono;
+  src: url(../fonts/NarkissYairMono-Regular-TRIAL.otf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: NarkissYairMono;
+  src: url(../fonts/NarkissYairMono-Light-TRIAL.otf);
+  font-weight: lighter;
+}
+
+/* --- setup --- */
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+    text-decoration: none;
+  }
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+img, picture, svg, video {
+  display: block;
+  max-width: 100%;
+}
+
+html {
+  color-scheme: dark light;
+}
+
+body {
+  min-height: 100vh;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+}
+*:focus {
+  outline: none !important;
+}
+
+/* --- primitives --- */
+
+body {
+  background-color: black;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+p {
+  color: white;
+  font-family: NarkissYairMono;
+  font-size: 45px;
+  line-height: 44px;
+  font-weight: normal;
+}
+
+h3 {
+  color: white;
+  font-family: NarkissYairMono;
+  font-size: 140px;
+  font-weight: bold;
+}
+
+/* --- classes --- */
+
+.sidenav {
+  height: 100vh;
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  top: 0;
+  position: sticky;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.sidenav .letter_container {
+  height: 3.5vh;
+  width: 3vh;
+  flex: flex;
+  flex-direction: column;
+  padding: 6px 8px 6px 16px;
+  margin: 0 30px 0 20px;
+  background-color: #f19d2046;
+  color: #6dbf8e;
+  display: block;
+  border-radius: 0.4em;
+}
+
+.sidenav .letter_container .letter {
+  font-family: NarkissTam;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.collapsible {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-size: 15px;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+
+.item_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.item_title {
+  display: flex;
+  flex-direction: column;
+}
+
+.item_symbol {
+  width: 30vw;
+}
+
+.item_content {
+  display: flex;
+  flex-direction: column;
+
+  padding: 0 18px;
+  max-height: 0;
+  padding-left: 15vw;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.item_definition {
+  display: block;
+}
+
+.item_examples {
+  display: block;
+  margin-top: 4vh;
+}
+
+.buffer {
+  overflow: hidden;
+  margin: 1vh 0;
+  height: 50px;
+}
+
+.buffer_txt {
+}
+
+/* functions */
+
+.active, .collapsible:hover {
+}
+
+.slideIn { left: 70px; }
+
+.blur { filter: blur(1.5em); }
+
+/* --- id --- */
+
+#marked {
+  background-color: #6dbf8e57;
+  color: #f19d20;
+}
+
+  
+  
