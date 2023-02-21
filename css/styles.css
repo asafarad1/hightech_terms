@@ -58,16 +58,26 @@ body {
   outline: none !important;
 }
 
+/* root */
+
+:root {
+  /* color */
+  --white-clr: rgb(255,255,255);
+  --black-clr: rgb(0,0,0);
+  --orang-clr: #ff9000;
+  --grenn-clr: #00e747;
+}
+
 /* --- primitives --- */
 
 body {
-  background-color: black;
+  background-color: var(--black-clr);
   display: flex;
   flex-direction: row-reverse;
 }
 
 p {
-  color: white;
+  color: var(--white-clr);
   font-family: NarkissYairMono;
   font-size: 45px;
   line-height: 44px;
@@ -75,7 +85,7 @@ p {
 }
 
 h3 {
-  color: white;
+  color: var(--white-clr);
   font-family: NarkissYairMono;
   font-size: 140px;
   font-weight: bold;
@@ -101,10 +111,9 @@ h3 {
   width: 3vh;
   flex: flex;
   flex-direction: column;
-  padding: 6px 8px 6px 16px;
+  padding: 6px 8px 70px 16px;
   margin: 0 30px 0 20px;
-  background-color: #f19d2046;
-  color: #6dbf8e;
+  color: var(--white-clr);
   display: block;
   border-radius: 0.4em;
 }
@@ -112,7 +121,12 @@ h3 {
 .sidenav .letter_container .letter {
   font-family: NarkissTam;
   font-size: 50px;
-  font-weight: bold;
+  font-weight: lighter;
+}
+
+.marked {
+  outline-style: solid;
+  outline-color: var(--orang-clr);
 }
 
 .collapsible {
@@ -190,12 +204,6 @@ h3 {
 
 .blur { filter: blur(1.5em); }
 
-/* --- id --- */
-
-#marked {
-  background-color: #6dbf8e57;
-  color: #f19d20;
-}
 
   
   
