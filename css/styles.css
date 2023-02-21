@@ -122,6 +122,10 @@ h3 {
   font-size: 15px;
 }
 
+.site_header {
+  padding: 3vh;
+}
+
 .items {
   display: flex;
   flex-direction: column;
