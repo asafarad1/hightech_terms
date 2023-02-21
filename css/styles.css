@@ -146,13 +146,12 @@ h3 {
 }
 
 .item_symbol {
-  width: 30vw;
+  width: 20vw;
 }
 
 .item_content {
   display: flex;
   flex-direction: column;
-
   padding: 0 18px;
   max-height: 0;
   padding-left: 15vw;
