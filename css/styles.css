@@ -149,7 +149,8 @@ h3 {
 }
 
 .site_footer{
-  padding: 0 3vw;
+  padding: 0 5vw;
+  margin-bottom: 3vh;
 }
 
 .site_footer img {
