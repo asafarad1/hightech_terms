@@ -165,6 +165,13 @@ h3 {
   flex-direction: column;
 }
 
+.item_title em{
+  font-family: NarkissTam;
+  font-size: 85px;
+  font-weight: lighter;
+  color: var(--green-clr);
+}
+
 .item_symbol img {
   max-height: 95px;
 }
