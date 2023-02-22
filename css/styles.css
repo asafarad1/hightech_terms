@@ -148,6 +148,14 @@ h3 {
   margin-bottom: 3vh;
 }
 
+.site_footer{
+  padding: 0 3vw;
+}
+
+.site_footer img {
+  width: 94vw;
+}
+
 .items {
   display: flex;
   flex-direction: column;
