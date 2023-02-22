@@ -65,7 +65,7 @@ body {
   --white-clr: rgb(255,255,255);
   --black-clr: rgb(0,0,0);
   --orang-clr: #ff9000;
-  --grenn-clr: #00e747;
+  --green-clr: #00e747;
 }
 
 /* --- primitives --- */
@@ -87,7 +87,7 @@ p {
 h3 {
   color: var(--white-clr);
   font-family: NarkissYairMono;
-  font-size: 140px;
+  font-size: 90px;
   font-weight: bold;
 }
 
@@ -138,6 +138,7 @@ h3 {
 
 .site_header {
   padding: 3vh;
+  margin-bottom: 3vh;
 }
 
 .items {
@@ -154,7 +155,8 @@ h3 {
 
 .item_header {
   display: flex;
-  justify-content: space-between;
+  gap: 4vw;
+  justify-content: flex-start;
   align-items: flex-end;
 }
 
@@ -163,18 +165,25 @@ h3 {
   flex-direction: column;
 }
 
-.item_symbol {
-  width: 20vw;
+.item_symbol img {
+  max-height: 95px;
 }
 
 .item_content {
   display: flex;
   flex-direction: column;
-  padding: 0 18px;
   max-height: 0;
   padding-left: 15vw;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
+}
+
+.upper_padding {
+  min-height: 5vh;
+}
+
+.lower_padding {
+  min-height: 2vh;
 }
 
 .item_definition {
@@ -186,9 +195,20 @@ h3 {
   margin-top: 4vh;
 }
 
+.item_examples p {
+  color: var(--green-clr);
+}
+
+.item_examples p em {
+  color: var(--white-clr);
+}
+
+.item_examples p i {
+  color: var(--orang-clr);
+}
+
 .buffer {
   overflow: hidden;
-  margin: 1vh 0;
   height: 50px;
 }
 
