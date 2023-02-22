@@ -7,6 +7,12 @@
 }
 
 @font-face {
+  font-family: NarkissTam;
+  src: url(../fonts/NarkissTam-Medium.otf);
+  font-weight: normal;
+}
+
+@font-face {
   font-family: NarkissYairMono;
   src: url(../fonts/NarkissYairMono-Bold-TRIAL.otf);
   font-weight: bold;
@@ -87,9 +93,9 @@ p {
 
 h3 {
   color: var(--white-clr);
-  font-family: NarkissYairMono;
+  font-family: NarkissTam;
   font-size: 90px;
-  font-weight: bold;
+  font-weight: normal;
 }
 
 /* --- classes --- */
@@ -167,7 +173,7 @@ h3 {
 }
 
 .item_title em{
-  font-family: NarkissTam;
+  font-family: NarkissYairMono;
   font-size: 85px;
   font-weight: lighter;
   color: var(--green-clr);
