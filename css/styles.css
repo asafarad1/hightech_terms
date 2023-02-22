@@ -183,6 +183,10 @@ h3 {
   max-height: 95px;
 }
 
+.sub_header img {
+  max-height: 50px;
+}
+
 .item_content {
   display: flex;
   flex-direction: column;
@@ -193,6 +197,10 @@ h3 {
 }
 
 .upper_padding {
+  min-height: 2vh;
+}
+
+.mid_padding {
   min-height: 5vh;
 }
 
